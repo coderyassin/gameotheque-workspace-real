@@ -1,5 +1,8 @@
 <ng-container *ngIf="videoGameList && videoGameList.length > 0; else noGames">
-  <dtbc-table-games [title]="title" [items]="videoGameList"></dtbc-table-games>
+  <dtbc-table-games
+      [title]="title"
+      [items]="videoGameList"
+      (toCreate)="prepareCreation($event)"></dtbc-table-games>
 </ng-container>
 
 <ng-template #noGames>

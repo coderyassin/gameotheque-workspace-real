@@ -29,4 +29,8 @@ export class ListGamesComponent {
       releaseDate: new Date()
     }
   ];
+
+  prepareCreation(videoGame: VideoGame) {
+    this.videoGameList.push(videoGame);
+  }
 }
