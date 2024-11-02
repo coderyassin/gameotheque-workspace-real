@@ -1,0 +1,15 @@
+<h2>{{ title() }}</h2>
+<table>
+  <tbody>
+  <tr>
+    <th>Name</th>
+    <th>Release Date</th>
+  </tr>
+    @for (videoGame of items(); track videoGame.name) {
+      <tr>
+        <td>{{ videoGame.name }}</td>
+        <td>{{ videoGame.releaseDate }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

@@ -1,1 +1,8 @@
-<p>list-games works!!!</p>
+<ng-container *ngIf="videoGameList && videoGameList.length > 0; else noGames">
+  <dtbc-table-games [title]="title" [items]="videoGameList"></dtbc-table-games>
+</ng-container>
+
+<ng-template #noGames>
+  <p>There are no video games.</p>
+</ng-template>
+

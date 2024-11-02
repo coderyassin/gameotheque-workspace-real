@@ -1,0 +1,36 @@
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Cell styling */
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Optional: Table borders */
+table, th, td {
+  border: 1px solid #ddd;
+}

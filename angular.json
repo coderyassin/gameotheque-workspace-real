@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "projects/gameotheque",
       "sourceRoot": "projects/gameotheque/src",
-      "prefix": "app",
+      "prefix": "dtbc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
