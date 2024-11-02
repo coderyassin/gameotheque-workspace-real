@@ -1,11 +1,14 @@
-<ng-container *ngIf="videoGameList && videoGameList.length > 0; else noGames">
+@if (videoGameList && videoGameList.length > 0) {
   <dtbc-table-games
-      [title]="title"
-      [items]="videoGameList"
-      (toCreate)="prepareCreation($event)"></dtbc-table-games>
-</ng-container>
-
-<ng-template #noGames>
+    [title]="title"
+    [items]="videoGameList"></dtbc-table-games>
+}
+@else {
   <p>There are no video games.</p>
-</ng-template>
+}
+
+@if (readyToCreate()) {
+  <dtbc-create-video-game (toCreateVideoGame)="prepareCreation($event)"></dtbc-create-video-game>
+}
+
 

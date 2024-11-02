@@ -1,36 +1,49 @@
-/* Table styling */
+/* Styling for the title */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for the table */
 table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-/* Header styling */
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
 th {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  text-align: left;
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
 }
 
-/* Cell styling */
-td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-/* Alternating row colors */
-tr:nth-child(odd) {
+tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-/* Hover effect for rows */
 tr:hover {
-  background-color: #e0e0e0;
+  background-color: #e2e2e2;
 }
 
-/* Optional: Table borders */
-table, th, td {
+/* Styling for custom component */
+dtbc-create-video-game {
+  display: block;
+  margin: 20px auto;
+  padding: 15px;
   border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }

@@ -1,0 +1,14 @@
+<h3>Add New Video Game</h3>
+<form #videoGameForm="ngForm" (ngSubmit)="onSubmit(videoGameForm)">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="newVideoGame.name" required />
+  </div>
+
+  <div>
+    <label for="releaseDate">Release Date:</label>
+    <input type="date" id="releaseDate" name="releaseDate" [(ngModel)]="newVideoGame.releaseDate" required />
+  </div>
+
+  <button type="submit" [disabled]="videoGameForm.invalid">Add Video Game</button>
+</form>
