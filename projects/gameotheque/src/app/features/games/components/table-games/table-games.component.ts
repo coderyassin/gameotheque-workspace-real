@@ -1,5 +1,5 @@
 import {Component, input} from '@angular/core';
-import {VideoGame} from '../../../../models/video-game';
+import {VideoGame} from '../../models/video-game';
 
 @Component({
   selector: 'dtbc-table-games',

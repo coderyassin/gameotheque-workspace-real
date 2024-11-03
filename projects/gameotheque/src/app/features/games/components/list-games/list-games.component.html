@@ -1,6 +1,8 @@
+<dtbc-main-filters></dtbc-main-filters>
+
 @if (videoGameList && videoGameList.length > 0) {
   <dtbc-table-games
-    [title]="title"
+    [title]="title()"
     [items]="videoGameList"></dtbc-table-games>
 }
 @else {

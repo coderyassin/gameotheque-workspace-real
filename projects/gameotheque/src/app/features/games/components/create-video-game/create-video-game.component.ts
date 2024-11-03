@@ -1,6 +1,6 @@
 import {Component, output} from '@angular/core';
 import {FormsModule, NgForm} from '@angular/forms';
-import {VideoGame} from '../../../../models/video-game';
+import {VideoGame} from '../../models/video-game';
 
 @Component({
   selector: 'dtbc-create-video-game',

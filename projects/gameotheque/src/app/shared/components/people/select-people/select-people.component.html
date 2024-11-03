@@ -1,0 +1,5 @@
+<select class="custom-select">
+  @for(person of persons$ | async; track person.name){
+    <option value="{{ person.name }}"> {{person.name}} </option>
+  }
+</select>
